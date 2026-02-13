@@ -123,6 +123,7 @@ ul {
     color: white;
     box-shadow: 0 4px 6px -1px rgba(79, 70, 229, 0.3);
     border: 1px solid transparent;
+    font-size: 1.1rem; /* Increased font size */
 }
 
 .btn-listen-book:hover {
