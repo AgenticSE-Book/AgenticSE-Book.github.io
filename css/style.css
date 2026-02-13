@@ -332,11 +332,23 @@ ul {
 
 .audio-player-container {
     flex: 1;
-    /* height: 200px;  Removed fixed height to allow content to dictate size */
-    border-radius: 12px;
+    border-radius: 16px;
     overflow: hidden;
-    background: linear-gradient(135deg, rgba(79, 70, 229, 0.05) 0%, rgba(6, 182, 212, 0.05) 100%);
-    border: 1px solid rgba(79, 70, 229, 0.1);
+    background: linear-gradient(135deg, rgba(79, 70, 229, 0.08) 0%, rgba(6, 182, 212, 0.08) 100%);
+    border: 2px solid rgba(79, 70, 229, 0.15);
+    padding: 20px;
+    box-shadow:
+        0 10px 25px -5px rgba(79, 70, 229, 0.15),
+        0 8px 10px -6px rgba(79, 70, 229, 0.1);
+    transition: all 0.3s ease;
+}
+
+.audio-player-container:hover {
+    transform: translateY(-2px);
+    box-shadow:
+        0 20px 35px -5px rgba(79, 70, 229, 0.2),
+        0 10px 15px -6px rgba(79, 70, 229, 0.15);
+    border-color: rgba(79, 70, 229, 0.25);
 }
 
 
