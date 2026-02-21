@@ -225,7 +225,8 @@ a:hover {
 }
 
 .book-cover {
-    max-width: 400px;
+    max-width: 500px;
+    width: 100%;
     border: 2px solid var(--primary-color);
     box-shadow: 0 0 30px rgba(0, 243, 255, 0.2);
     transition: all 0.5s ease;

@@ -106,6 +106,19 @@ if (audioPlayer) {
         progressBar.style.width = '0%';
         stopVisualizer();
     });
+
+    // Support clicking Listen button in hero to start playback directly
+    const heroListenBtn = document.getElementById('hero-listen-btn');
+    if (heroListenBtn) {
+        heroListenBtn.addEventListener('click', () => {
+            if (audioPlayer.paused) {
+                audioPlayer.play();
+                playIcon.style.display = 'none';
+                pauseIcon.style.display = 'block';
+                startVisualizer();
+            }
+        });
+    }
 }
 
 function updateProgress(e) {
