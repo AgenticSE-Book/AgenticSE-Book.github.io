@@ -21,20 +21,28 @@
     <canvas id="matrix-canvas"></canvas>
     <div class="scanline"></div>
 
-
     <!-- Hero Section -->
     <section class="hero container">
         <div class="hero-content">
-            <h1 class="hero-title">Agentic Software Engineering</h1>
-            <p class="hero-subtitle">
+            <div class="hero-announcement">
+                <a href="?lang=zh" id="lang-switch-badge" class="announcement-link">
+                    <span class="pulse-dot"></span>
+                    <span id="lang-badge-text">阅读中文版 (Read in Chinese)</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="arrow-icon"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </a>
+            </div>
+            <div class="title-row">
+                <h1 class="hero-title" data-i18n="heroTitle">Agentic Software Engineering</h1>
+            </div>
+            <p class="hero-subtitle" data-i18n="heroSubtitle">
                 Discover how autonomous AI agents are revolutionizing the way we build, test, and deploy software. The definitive guide to the next era of engineering.
             </p>
             <div class="hero-buttons">
-                <a href="#read-online" class="btn btn-read-online">Read Online</a>
-                <a href="pdf/AgenticSE_Book.pdf" download class="btn btn-read-pdf">Download PDF</a>
+                <a href="#read-online" class="btn btn-read-online" data-i18n="readOnline">Read Online</a>
+                <a href="pdf/AgenticSE_Book.pdf" download class="btn btn-read-pdf" data-i18n="downloadPdf">Download PDF</a>
                 <a href="#audio-section" id="hero-listen-btn" class="btn btn-listen-book" style="display: inline-flex; align-items: center; gap: 8px;">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path></svg>
-                    Listen
+                    <span data-i18n="listenBtn">Listen</span>
                 </a>
             </div>
         </div>
@@ -48,10 +56,10 @@
     <!-- Audio Deep Dive Section -->
     <section id="audio-section" class="section bg-white">
         <div class="container">
-            <h2 class="section-title">Listen on the Go</h2>
+            <h2 class="section-title" data-i18n="listenOnTheGo">Listen on the Go</h2>
             <div class="audio-content-wrapper">
                 <div class="audio-description">
-                    <p>Experience a 27-minute deep dive into <em>Agentic Software Engineering</em>. This AI-generated audio summary explores the core concepts, the shift from coding to architecture, and the future of software development.</p>
+                    <p data-i18n="audioDesc">Experience a 27-minute deep dive into <em>Agentic Software Engineering</em>. This AI-generated audio summary explores the core concepts, the shift from coding to architecture, and the future of software development.</p>
                 </div>
                 
                 <!-- Custom Matrix Audio Player -->
@@ -93,7 +101,7 @@
     <!-- About Section -->
     <section class="section">
         <div class="container">
-            <h2 class="section-title">What You'll Learn</h2>
+            <h2 class="section-title" data-i18n="whatYoullLearn">What You'll Learn</h2>
             <div class="features-grid">
                 <div class="feature-card">
                     <div class="feature-icon">
@@ -103,8 +111,8 @@
                             <line x1="12" y1="22.08" x2="12" y2="12"></line>
                         </svg>
                     </div>
-                    <h3>The Real Bottleneck</h3>
-                    <p>Code production isn't the bottleneck. The real challenge is complexity, communication, and maintaining system integrity over time.</p>
+                    <h3 data-i18n="feat1Title">The Real Bottleneck</h3>
+                    <p data-i18n="feat1Desc">Code production isn't the bottleneck. The real challenge is complexity, communication, and maintaining system integrity over time.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
@@ -112,8 +120,8 @@
                             <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
                         </svg>
                     </div>
-                    <h3>The Discipline</h3>
-                    <p>Agentic Software Engineering is the discipline of ensuring reliability and trust from stochastic AI and human contributors.</p>
+                    <h3 data-i18n="feat2Title">The Discipline</h3>
+                    <p data-i18n="feat2Desc">Agentic Software Engineering is the discipline of ensuring reliability and trust from stochastic AI and human contributors.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
@@ -121,8 +129,8 @@
                             <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
                         </svg>
                     </div>
-                    <h3>The New Winners</h3>
-                    <p>Success belongs to teams who set clear intent, manage risk boundaries, and demand evidence—not just those who type fastest.</p>
+                    <h3 data-i18n="feat3Title">The New Winners</h3>
+                    <p data-i18n="feat3Desc">Success belongs to teams who set clear intent, manage risk boundaries, and demand evidence—not just those who type fastest.</p>
                 </div>
             </div>
         </div>
@@ -131,17 +139,17 @@
     <!-- PDF Viewer Section -->
     <section id="read-online" class="section bg-white">
         <div class="container">
-            <h2 class="section-title">Read the Book</h2>
+            <h2 class="section-title" data-i18n="readTheBook">Read the Book</h2>
             <div class="pdf-viewer-container">
                 <!-- Local PDF Object -->
                 <object data="pdf/AgenticSE_Book.pdf" type="application/pdf" width="100%" height="100%">
-                    <p>Unable to display PDF directly.</p>
+                    <p data-i18n="pdfFail">Unable to display PDF directly.</p>
                 </object>
                 
                 <!-- Mobile/Fallback View -->
                 <div class="mobile-pdf-fallback">
-                    <p>Preview not optimized for mobile.</p>
-                    <a href="pdf/AgenticSE_Book.pdf" class="btn btn-read-pdf" style="margin-top: 20px;">Download Local PDF</a>
+                    <p data-i18n="mobilePreviewFail">Preview not optimized for mobile.</p>
+                    <a href="pdf/AgenticSE_Book.pdf" class="btn btn-read-pdf" style="margin-top: 20px;" data-i18n="downloadLocalPdf">Download Local PDF</a>
                 </div>
             </div>
         </div>
@@ -150,8 +158,8 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p>Copyright &copy; 2026 by Ahmed E. Hassan. All rights reserved.</p>
-            <p style="font-size: 0.8rem; margin-top: 10px; opacity: 0.7;">
+            <p data-i18n="copyright">Copyright &copy; 2026 by Ahmed E. Hassan. All rights reserved.</p>
+            <p style="font-size: 0.8rem; margin-top: 10px; opacity: 0.7;" data-i18n="openSource">
                 This website is open source. 
             </p>
         </div>
