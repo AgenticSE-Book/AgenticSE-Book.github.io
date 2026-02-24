@@ -649,9 +649,26 @@ footer p {
 
     /* Mobile PDF Handling */
     .pdf-viewer-container {
-        height: 100vh !important;
+        height: auto !important;
         display: block;
-        padding: 0;
+        padding: 40px 20px;
+        border: none;
+        background: transparent;
+        box-shadow: none;
+    }
+    
+    .pdf-viewer-container object {
+        display: none;
+    }
+    
+    .mobile-pdf-fallback {
+        display: flex !important;
+        flex-direction: column;
+        padding: 40px 20px;
+        background: var(--card-bg);
+        border-radius: 8px;
+        border: 1px solid var(--primary-color);
+        box-shadow: var(--glow-cyan);
     }
     
     .audio-content-wrapper {

@@ -179,8 +179,8 @@ const translations = {
         feat3Desc: "Success belongs to teams who set clear intent, manage risk boundaries, and demand evidence—not just those who type fastest.",
         readTheBook: "Read the Book",
         pdfFail: "Unable to display PDF directly.",
-        mobilePreviewFail: "Preview not optimized for mobile.",
-        downloadLocalPdf: "Download Local PDF",
+        mobilePreviewFail: "PDF preview is not supported on mobile browsers.",
+        downloadLocalPdf: "Download / View PDF",
         copyright: "Copyright &copy; 2026 by Ahmed E. Hassan. All rights reserved.",
         openSource: "This website is open source."
     },
@@ -203,8 +203,8 @@ const translations = {
         feat3Desc: "成功属于那些设定明确意图、管理风险边界并要求提供证据的团队——而不仅仅是敲代码最快的团队。",
         readTheBook: "阅读本书",
         pdfFail: "无法直接显示 PDF。",
-        mobilePreviewFail: "移动端未优化预览体验。",
-        downloadLocalPdf: "下载本地 PDF",
+        mobilePreviewFail: "移动端浏览器不支持直接预览 PDF。",
+        downloadLocalPdf: "下载 / 浏览 PDF",
         copyright: "版权所有 &copy; 2026 Ahmed E. Hassan。保留所有权利。",
         openSource: "本网站开源。"
     }
