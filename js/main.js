@@ -169,7 +169,7 @@ const translations = {
         downloadPdf: "Download PDF",
         listenBtn: "Listen",
         listenOnTheGo: "Listen on the Go",
-        audioDesc: "Experience a 37-minute deep dive into <em>Agentic Software Engineering</em>. This AI-generated audio summary explores the core concepts, the shift from coding to architecture, and the future of software development.",
+        audioDesc: "Experience a 38-minute deep dive into <em>Agentic Software Engineering</em>. This AI-generated audio summary explores the core concepts, the shift from coding to architecture, and the future of software development.",
         whatYoullLearn: "What You'll Learn",
         feat1Title: "The Real Bottleneck",
         feat1Desc: "Code production isn't the bottleneck. The real challenge is complexity, communication, and maintaining system integrity over time.",
